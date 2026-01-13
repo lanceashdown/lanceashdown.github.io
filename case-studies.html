@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lance Ashdown — Case studies</title>
+  <meta name="description" content="Case studies">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <div class="brand">Lance Ashdown</div>
+    <a data-nav href="index.html">Home</a>
+    <a data-nav href="work.html">Work samples</a>
+    <a data-nav href="case-studies.html">Case studies</a>
+    <a data-nav href="code.html">Code</a>
+    <a data-nav href="resume.html">Resume</a>
+    <a data-nav href="contact.html">Contact</a>
+    <div class="spacer"></div>
+    <a class="btn" href="https://github.com/lanceashdown" target="_blank" rel="noreferrer">GitHub</a>
+    <a class="btn" href="https://linkedin.com/in/lance-ashdown" target="_blank" rel="noreferrer">LinkedIn</a>
+  </nav>
+</header>
+<main>
+
+<div class="section-title">
+  <h2>Case studies</h2>
+  <span class="badge">Problem → approach → impact</span>
+</div>
+<p class="lede">
+  These are short, recruiter-friendly summaries of how I approach documentation work. They avoid confidential details and focus on methods and outcomes.
+</p>
+
+<hr>
+
+<section id="odb">
+  <div class="section-title"><h2>Oracle Database@AWS launch docs</h2><span class="badge">AWS • new doc set</span></div>
+  <div class="two">
+    <div class="item">
+      <strong>Problem</strong>
+      <div class="meta">A new service needed a usable, consistent doc set that could scale with releases.</div>
+      <p>Launch documentation had to be accurate, developer-focused, and aligned with AWS doc standards and terminology.</p>
+    </div>
+    <div class="item">
+      <strong>Approach</strong>
+      <ul>
+        <li>Established a small, clear information architecture (getting started → concepts → tasks → troubleshooting).</li>
+        <li>Partnered with engineers and PMs to confirm workflows, edge cases, and terminology.</li>
+        <li>Created reusable writing patterns for console text, alert messages, and procedural content.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="item" style="margin-top:14px">
+    <strong>Impact</strong>
+    <ul>
+      <li>Delivered launch-ready docs with a structure that supports iterative expansion.</li>
+      <li>Improved consistency across user guide, console text, and system messages.</li>
+      <li><a href="https://docs.aws.amazon.com/odb/" target="_blank" rel="noreferrer">Public sample: Oracle Database@AWS Documentation</a></li>
+    </ul>
+  </div>
+</section>
+
+<hr>
+
+<section id="rds">
+  <div class="section-title"><h2>Scaling Amazon RDS documentation</h2><span class="badge">AWS • high-change docs</span></div>
+  <div class="two">
+    <div class="item">
+      <strong>Problem</strong>
+      <p>High-traffic database docs change frequently and have lots of interdependencies (features, console, CLI/API, release notes).</p>
+      <div class="meta">Goal: keep docs accurate and findable while reducing maintenance pain.</div>
+    </div>
+    <div class="item">
+      <strong>Approach</strong>
+      <ul>
+        <li>Wrote and maintained core user-guide content for RDS and Aurora areas.</li>
+        <li>Kept related surfaces aligned: user guide, CLI/API reference updates, and release notes.</li>
+        <li>Used checklists and lightweight QA to reduce regressions (terminology, cross-links, repeated steps).</li>
+      </ul>
+    </div>
+  </div>
+  <div class="item" style="margin-top:14px">
+    <strong>Impact</strong>
+    <ul>
+      <li>Clearer task flows and more consistent feature coverage.</li>
+      <li>Reduced “drift” between user guide, CLI/API reference, and release notes.</li>
+      <li>Public samples:
+        <a href="https://docs.aws.amazon.com/rds/" target="_blank" rel="noreferrer">Amazon RDS & Aurora</a> •
+        <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Oracle.html" target="_blank" rel="noreferrer">RDS for Oracle</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<hr>
+
+<section id="tools">
+  <div class="section-title"><h2>Internal doc tooling</h2><span class="badge">automation • quality</span></div>
+  <div class="two">
+    <div class="item">
+      <strong>Problem</strong>
+      <p>Some doc work is repetitive (release note formatting, list maintenance, link checks), which increases cycle time and error risk.</p>
+    </div>
+    <div class="item">
+      <strong>Approach</strong>
+      <ul>
+        <li>Identified the most repetitive steps and automated the parts that were deterministic.</li>
+        <li>Created scripts (and simple docs) so other writers could run them safely.</li>
+        <li>Focused on outputs that save time every release cycle (not one-off tooling).</li>
+      </ul>
+    </div>
+  </div>
+  <div class="item" style="margin-top:14px">
+    <strong>Impact</strong>
+    <ul>
+      <li>Reduced authoring time by hours per release cycle for targeted tasks.</li>
+      <li>Improved consistency and reduced manual copy/paste errors.</li>
+      <li>See the <a href="code.html">Code</a> page for a public-friendly sample you can publish (link checker template).</li>
+    </ul>
+  </div>
+</section>
+
+<hr>
+
+<section id="oracle">
+  <div class="section-title"><h2>Oracle Database concepts overhaul</h2><span class="badge">Oracle • foundational docs</span></div>
+  <div class="two">
+    <div class="item">
+      <strong>Problem</strong>
+      <p>Large “concepts” books often grow organically and become hard to navigate, inconsistent, and difficult to maintain.</p>
+    </div>
+    <div class="item">
+      <strong>Approach</strong>
+      <ul>
+        <li>Reworked information architecture and narrative flow to match how readers learn the system.</li>
+        <li>Standardized terminology and cross-references; reduced duplication.</li>
+        <li>Collaborated with subject matter experts across features.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="item" style="margin-top:14px">
+    <strong>Impact</strong>
+    <ul>
+      <li>Improved clarity and long-term maintainability for a foundational documentation set.</li>
+      <li>Made conceptual material more usable for onboarding and reference.</li>
+      <li>Public context: Oracle Database documentation portal (see Work samples).</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div>© Lance Ashdown • Built with plain HTML/CSS so it can be hosted free on GitHub Pages.</div>
+</footer>
+<script src="assets/script.js"></script>
+</body>
+</html>

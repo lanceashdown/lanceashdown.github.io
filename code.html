@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lance Ashdown — Code</title>
+  <meta name="description" content="Code samples">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <div class="brand">Lance Ashdown</div>
+    <a data-nav href="index.html">Home</a>
+    <a data-nav href="work.html">Work samples</a>
+    <a data-nav href="case-studies.html">Case studies</a>
+    <a data-nav href="code.html">Code</a>
+    <a data-nav href="resume.html">Resume</a>
+    <a data-nav href="contact.html">Contact</a>
+    <div class="spacer"></div>
+    <a class="btn" href="https://github.com/lanceashdown" target="_blank" rel="noreferrer">GitHub</a>
+    <a class="btn" href="https://linkedin.com/in/lance-ashdown" target="_blank" rel="noreferrer">LinkedIn</a>
+  </nav>
+</header>
+<main>
+
+<div class="section-title">
+  <h2>Code samples</h2>
+  <span class="badge">Repos • gists • snippets</span>
+</div>
+<p class="lede">
+  This page is designed for code that supports documentation work: site generators, doc QA, release tooling, examples for API docs, and small utilities.
+  Add links to public repos or gists as you publish them.
+</p>
+
+<hr>
+
+<div class="grid">
+  <div class="card">
+    <h3>Recommended structure</h3>
+    <p>Create 1–3 small public repos:</p>
+    <ul>
+      <li><strong>docs-as-code-demo</strong> — MkDocs/Docusaurus site with CI build and a short writing sample</li>
+      <li><strong>doc-qa-tools</strong> — link checker, style checks, metadata validation</li>
+      <li><strong>api-sample</strong> — a tiny OpenAPI spec + reference docs + a tutorial</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>How to embed code nicely</h3>
+    <ul>
+      <li>Short snippet? Put it in a GitHub Gist and link it here.</li>
+      <li>Bigger sample? Link to a repo and add a short “what it demonstrates” paragraph.</li>
+      <li>Include <em>inputs/outputs</em> so reviewers can understand value in 30 seconds.</li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<div class="section-title">
+  <h2>Publish-ready sample: simple link checker (Python)</h2>
+  <span class="badge">starter content</span>
+</div>
+<p>This is a safe, generic utility you can publish publicly to demonstrate automation + writing clarity. Put it in a repo named <code>doc-qa-tools</code>.</p>
+
+<pre><code class="language-python">#!/usr/bin/env python3
+"""link_check.py — simple link checker for markdown files.
+
+Usage:
+  python link_check.py docs/
+
+What it does:
+- Finds http/https links in *.md files
+- Requests each URL (HEAD, then GET fallback)
+- Prints non-200 responses and timeouts
+
+Note: Keep timeouts low in CI, and consider allow/deny lists for known flaky hosts.
+"""
+
+from __future__ import annotations
+import re
+import sys
+from pathlib import Path
+import requests
+
+LINK_RE = re.compile(r"https?://[^)\]\s&gt;\"']+")
+
+def iter_md_files(root: Path):
+    if root.is_file() and root.suffix.lower() == ".md":
+        yield root
+        return
+    for p in root.rglob("*.md"):
+        yield p
+
+def main(argv: list[str]) -&gt; int:
+    if len(argv) != 2:
+        print("Usage: python link_check.py &lt;path-to-md-or-folder&gt;")
+        return 2
+
+    root = Path(argv[1])
+    urls = set()
+    for md in iter_md_files(root):
+        text = md.read_text(encoding="utf-8", errors="ignore")
+        for m in LINK_RE.findall(text):
+            urls.add(m)
+
+    if not urls:
+        print("No links found.")
+        return 0
+
+    failed = 0
+    for url in sorted(urls):
+        try:
+            r = requests.head(url, allow_redirects=True, timeout=6)
+            if r.status_code &gt;= 400:
+                r = requests.get(url, allow_redirects=True, timeout=10)
+            if r.status_code &gt;= 400:
+                failed += 1
+                print(f"FAIL {r.status_code}: {url}")
+        except Exception as e:
+            failed += 1
+            print(f"ERROR: {url} ({e})")
+
+    if failed:
+        print(f"\n{failed} link(s) failed.")
+        return 1
+    print("All links OK.")
+    return 0
+
+if __name__ == "__main__":
+    raise SystemExit(main(sys.argv))
+</code></pre>
+
+<div class="item" style="margin-top:14px">
+  <strong>Add your public repos here</strong>
+  <div class="meta">Once you create repos, link them here. Until then, this points to your GitHub profile.</div>
+  <ul>
+    <li><a href="https://github.com/lanceashdown" target="_blank" rel="noreferrer">GitHub profile: https://github.com/lanceashdown</a></li>
+  </ul>
+  <p class="meta">Suggested repo names (create any subset): <code>docs-as-code-demo</code>, <code>doc-qa-tools</code>, <code>api-sample</code></p>
+</div>
+</main>
+<footer>
+  <div>© Lance Ashdown • Built with plain HTML/CSS so it can be hosted free on GitHub Pages.</div>
+</footer>
+<script src="assets/script.js"></script>
+</body>
+</html>

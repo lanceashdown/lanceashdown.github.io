@@ -1,0 +1,244 @@
+{
+  "name": "Lance Ashdown",
+  "email": "lance.ashdown31@gmail.com",
+  "phone": "919-597-8944",
+  "location": "Chapel Hill, NC 27514",
+  "linkedin": "https://linkedin.com/in/lance-ashdown",
+  "links": [
+    {
+      "label": "Oracle Database@AWS Documentation",
+      "url": "https://docs.aws.amazon.com/odb/",
+      "category": "AWS documentation (Oracle Database@AWS)"
+    },
+    {
+      "label": "Amazon RDS and Aurora",
+      "url": "https://docs.aws.amazon.com/rds/",
+      "category": "AWS documentation (Amazon RDS / Aurora)"
+    },
+    {
+      "label": "RDS for Oracle",
+      "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Oracle.html",
+      "category": "AWS documentation"
+    },
+    {
+      "label": "RDS Custom",
+      "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-custom.html",
+      "category": "AWS documentation"
+    },
+    {
+      "label": "Monitoring RDS",
+      "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Monitoring.html",
+      "category": "AWS documentation"
+    },
+    {
+      "label": "Managing RDS",
+      "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_RDS_Managing.html",
+      "category": "AWS documentation"
+    },
+    {
+      "label": "Configuring RDS",
+      "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_RDS_Configuring.html",
+      "category": "AWS documentation"
+    },
+    {
+      "label": "What is RDS",
+      "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
+      "category": "AWS documentation"
+    },
+    {
+      "label": "RDS for Oracle Release Notes",
+      "url": "https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/Welcome.html",
+      "category": "AWS documentation"
+    },
+    {
+      "label": "RDS console",
+      "url": "http://console.aws.amazon.com/rds/home",
+      "category": "Other"
+    },
+    {
+      "label": "12.1",
+      "url": "https://docs.oracle.com/database/121/TGSQL/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "12.2",
+      "url": "https://docs.oracle.com/database/122/TGSQL/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "18c",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/18/tgsql/index.html",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "19c",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/tgsql/index.html",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "12.2",
+      "url": "https://docs.oracle.com/database/122/INMEM/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "18c",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/18/inmem/",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "19c",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/inmem/",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "18c",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/18/tutorial-verifying-in-memory-access/",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "Enhanced Optimizer Statistics",
+      "url": "https://www.youtube.com/watch?v=AW6pT_RwGdc",
+      "category": "Other"
+    },
+    {
+      "label": "Adaptive Execution Plans",
+      "url": "https://www.youtube.com/watch?v=9o9iuxNBciQ",
+      "category": "Other"
+    },
+    {
+      "label": "11.1",
+      "url": "http://docs.oracle.com/cd/B28359_01/server.111/b28275/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "11.2",
+      "url": "https://docs.oracle.com/cd/E11882_01/server.112/e10822/toc.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "12.1",
+      "url": "https://docs.oracle.com/database/121/TDPPT/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "12.1",
+      "url": "https://docs.oracle.com/database/121/ARPLS/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "12.2",
+      "url": "https://docs.oracle.com/database/122/ARPLS/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "18c",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/18/arpls/",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "19c",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/arpls/",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "11.2",
+      "url": "http://docs.oracle.com/cd/E11882_01/server.112/e40540/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "12.1",
+      "url": "http://docs.oracle.com/database/121/CNCPT/toc.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "12.2",
+      "url": "http://docs.oracle.com/database/122/CNCPT/toc.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "19c",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "12.1",
+      "url": "https://docs.oracle.com/cd/E55822_01/AMAGD/toc.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "12.1",
+      "url": "https://docs.oracle.com/cd/E55822_01/nav/mgloss.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "10.1",
+      "url": "http://docs.oracle.com/cd/B19306_01/appdev.102/b14252/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "10.1",
+      "url": "http://docs.oracle.com/cd/B19306_01/install.102/b14235/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "10.1",
+      "url": "http://docs.oracle.com/cd/B19306_01/backup.102/b14194/toc.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "10.1",
+      "url": "http://docs.oracle.com/cd/B19306_01/backup.102/b25049/toc.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "11.1",
+      "url": "http://docs.oracle.com/cd/B28359_01/backup.111/b28270/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "11.1",
+      "url": "http://docs.oracle.com/cd/B28359_01/backup.111/b28273/toc.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "10.2",
+      "url": "http://docs.oracle.com/cd/B19306_01/appdev.102/b14252/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "10.2",
+      "url": "http://docs.oracle.com/cd/B19306_01/B14251_01/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "8.1.6",
+      "url": "http://docs.oracle.com/cd/A87860_01/doc/server.817/a76960/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "8.1",
+      "url": "http://docs.oracle.com/cd/A87860_01/doc/server.817/a76993/toc.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "9.2",
+      "url": "http://docs.oracle.com/cd/B10501_01/server.920/a97202/toc.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "10.1",
+      "url": "http://docs.oracle.com/cd/B14117_01/server.101/b10735/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "9.2",
+      "url": "http://docs.oracle.com/cd/B10501_01/rac.920/a96596/title.htm",
+      "category": "Oracle documentation"
+    },
+    {
+      "label": "8.1",
+      "url": "https://docs.oracle.com/cd/A87860_01/doc/server.817/a76995/toc.htm",
+      "category": "Oracle documentation"
+    }
+  ]
+}
